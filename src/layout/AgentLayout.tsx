@@ -4,11 +4,11 @@ import {
   ClipboardList,
   BarChart3,
   Users,
-  AlertTriangle,
+  // AlertTriangle,
   MessageSquare,
   Settings,
   LogOut,
-  File,
+  // File,
   User,
   ShieldCheck,
 } from "lucide-react";
@@ -26,17 +26,17 @@ function AgentLayout() {
       icon: <ClipboardList size={25} />,
       label: "DBS Tracker",
     },
-    {
-      path: "/IncidentMgt",
-      icon: <AlertTriangle size={25} />,
-      label: "Incident Mgt",
-    },
+    // {
+    //   path: "/IncidentMgt",
+    //   icon: <AlertTriangle size={25} />,
+    //   label: "Incident Mgt",
+    // },
 
-    {
-      path: "/Payment",
-      icon: <File size={25} />,
-      label: "Payment Log",
-    },
+    // {
+    //   path: "/Payment",
+    //   icon: <File size={25} />,
+    //   label: "Payment Log",
+    // },
     {
       path: "/Reports",
       icon: <BarChart3 size={25} />,

@@ -65,7 +65,7 @@ function PaymentDashboard() {
         <div className="col-md-12">
           <div className="flex flex-wrap items-center justify-between">
             <div className="flex">
-              <File className="text-blue-600 mr-2" size={36} />
+              <File className="text-[rgb(112_22_208/0.9)] mr-2" size={36} />
               <div>
                 <h3 className="mb-0 text-black">Payment Log</h3>
                 <p className="text-secondary-600 text-black">
