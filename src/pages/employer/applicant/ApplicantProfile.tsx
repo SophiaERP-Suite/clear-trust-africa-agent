@@ -19,7 +19,7 @@ import "../../../assets2/js/swiper-slider.js";
 import { useState } from "react";
 // import { ChevronRightIcon } from "lucide-react";
 
-function AdminApplicantsNew() {
+function ApplicantsNew() {
   const [activeTab, setActiveTab] = useState("overview");
 
   return (
@@ -1525,4 +1525,4 @@ function AdminApplicantsNew() {
   );
 }
 
-export default AdminApplicantsNew;
+export default ApplicantsNew;

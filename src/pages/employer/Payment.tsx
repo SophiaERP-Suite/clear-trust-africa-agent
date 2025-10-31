@@ -97,7 +97,7 @@ function PaymentDashboard() {
             >
               <div className="flex items-start justify-between mb-4">
                 <div className="py-3 px-3 bg-slate-100/50 rounded-full">
-                  <Icon className="w-6 h-5 text-white" />
+                  <Icon size={25} className="text-white" />
                 </div>
               </div>
               <div>
@@ -115,7 +115,7 @@ function PaymentDashboard() {
         <div className="relative flex flex-col mb-8 bg-white rounded shadow-lg dark:bg-dark-card grid gird-cols-1 lg:col-span-2">
           <div className="flex flex-col overflow-hidden bg-white rounded-lg dark:bg-dark-card dark:text-secondary-600">
             <div className="relative flex flex-wrap justify-between p-5 ">
-              <h4 className="mb-2 sm:mb-0 font-bold">Payment Log</h4>
+              <h4 className="mb-2 text-xl sm:mb-0 font-bold">Payment Log</h4>
               <div className="flex">
                 <select
                   value={filter}

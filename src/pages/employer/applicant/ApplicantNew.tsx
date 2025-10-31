@@ -17,7 +17,7 @@ import "../../../assets2/js/slider-tabs.js";
 import "../../../assets2/js/sweet-alert.js";
 import "../../../assets2/js/swiper-slider.js";
 
-function AdminEmployeesNew() {
+function ApplicantNew() {
   return (
     <>
      
@@ -29,16 +29,16 @@ function AdminEmployeesNew() {
           <div className="flex">
             <Users className="text-[rgb(112_22_208/0.9)] mr-2 " size={36} />
             <div>
-              <h3 className="mb-0 text-black">Employee Management</h3>
+              <h3 className="mb-0 text-black">Applicant Management</h3>
               <p className="text-secondary-600 text-black">
                 Dashboard <ChevronRightIcon size={14} /> Report & Analytics{" "}
               </p>
             </div>
           </div>
           <div>
-            <a href="Employee" className="btn btn-primary">
+            <a href="Applicant" className="btn btn-primary">
               <Users size={18} className="mr-2" />
-              All Employees
+              All Applicants
             </a>
           </div>
         </div>
@@ -431,4 +431,4 @@ function AdminEmployeesNew() {
   );
 }
 
-export default AdminEmployeesNew;
+export default ApplicantNew;

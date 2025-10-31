@@ -1,9 +1,7 @@
-// src/layouts/BaseDashboardLayout.tsx
+
 import { Outlet, NavLink } from "react-router-dom";
 import { useState, useRef, useEffect, type JSX } from "react";
 import DashboardHead from "../components/DashboardHead";
-import binta from "../assets2/img/binta.jpeg";
-// import man1 from "../assets2/img/donald_adolphus.jpg";
 import femi from "../assets2/img/femi_adebayo.jpg";
 import { ArrowRight, ArrowLeft, Menu, X, Bell, Search } from "lucide-react";
 
@@ -119,10 +117,10 @@ function BaseDashboardLayout({ navItems, title }: BaseDashboardLayoutProps) {
                   />
                   <div className="caption ml-3 d-none d-md-block ">
                     <h6 className="mb-0 caption-title mr-4" style={{}}>
-                      Olawale Adigun
+                      Calistus Ineh
                     </h6>
-                    <p className="mb-0 text-sm caption-sub-title focusa active:text-primary-500  focus:text-primary-500 hover:text-primary-500 text-black mr-4">
-                      HR
+                    <p className="mb-0 text-sm font-bold caption-sub-title focusa active:text-primary-500  focus:text-primary-500 hover:text-primary-500 text-black mr-4">
+                      Agent
                     </p>
                   </div>
                 </a>
@@ -921,7 +919,7 @@ function BaseDashboardLayout({ navItems, title }: BaseDashboardLayoutProps) {
                                   onClick={() => setOpen(!open)}
                                 >
                                   <img
-                                    src={binta}
+                                    src={femi}
                                     alt="User-Profile"
                                     className="h-12 w-12 rounded-full border truncate"
                                     style={{ objectFit: "cover" }}
@@ -932,10 +930,10 @@ function BaseDashboardLayout({ navItems, title }: BaseDashboardLayoutProps) {
                                       className="mb-0 caption-title mr-4"
                                       style={{}}
                                     >
-                                      Binta Schools
+                                      Calistus Ineh
                                     </h6>
-                                    <p className="mb-0 caption-sub-title focusa active:text-primary-500  focus:text-primary-500 hover:text-primary-500 text-black mr-4">
-                                      Admin
+                                    <p className="mb-0 caption-sub-title focusa active:text-primary-500 font-bold focus:text-primary-500 hover:text-primary-500 text-black mr-4">
+                                      Agent
                                     </p>
                                   </div>
                                 </a>

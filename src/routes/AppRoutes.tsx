@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "../pages/employer/Dashboard";
-import EmployerLayout from "../layout/EmployerLayout";
+import EmployerLayout from "../layout/AgentLayout";
 import ApplicantNew from "../pages/employer/applicant/ApplicantNew";
 import Applicants from "../pages/employer/applicant/Applicants";
 import ApplicantProfile from "../pages/employer/applicant/ApplicantProfile";

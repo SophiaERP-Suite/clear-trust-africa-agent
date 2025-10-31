@@ -13,7 +13,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 
-function EmploymentLayout() {
+function AgentLayout() {
   const navItems = [
     {
       path: "/Dashboard",
@@ -50,9 +50,9 @@ function EmploymentLayout() {
     },
 
      {
-      path: "/Employee",
+      path: "/Applicant",
       icon: <Users size={25} />,
-      label: "Employee Mgt",
+      label: "Applicant Mgt",
     },
 
     {
@@ -80,7 +80,7 @@ function EmploymentLayout() {
     },
   ];
 
-  return <BaseDashboardLayout navItems={navItems} title={"EMPLOYER"} />;
+  return <BaseDashboardLayout navItems={navItems} title={"AGENT"} />;
 }
 
-export default EmploymentLayout;
+export default AgentLayout;

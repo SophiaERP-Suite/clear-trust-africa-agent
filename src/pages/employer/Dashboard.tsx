@@ -19,13 +19,7 @@ import donald from "../../assets2/img/donald_adolphus.jpg";
 import rashkin from "../../assets2/img/isaiah_rashkin.jpg";
 import deborah from "../../assets2/img/deborah_wilkins.jpg";
 import femi from "../../assets2/img/femi_adebayo.jpg";
-import {
-  AlertTriangle,
-  Clipboard,
-  Folder,
-  Plus,
-  Users,
-} from "lucide-react";
+import { AlertTriangle, Clipboard, Folder, Plus, Users } from "lucide-react";
 
 function EmployerDashboard() {
   return (
@@ -101,7 +95,7 @@ function EmployerDashboard() {
           <div className="relative flex flex-col mb-8 bg-white rounded shadow-lg dark:bg-dark-card grid gird-cols-1 lg:col-span-2">
             <div className="flex flex-col overflow-hidden bg-white rounded-lg dark:bg-dark-card dark:text-secondary-600">
               <div className="relative flex flex-wrap justify-between p-5 ">
-                <h4 className="mb-2 sm:mb-0 dark:text-white">
+                <h4 className="text-lg font-semibold dark:text-white">
                   Incident Trends
                 </h4>
                 <div className="flex">
@@ -987,7 +981,9 @@ function EmployerDashboard() {
           <div className="relative flex flex-col max-h-[420px] mb-8 lg:mb-0 bg-white rounded shadow-lg dark:bg-dark-card grid grid-cols-1">
             <div className="flex flex-col overflow-hidden bg-white rounded-lg dark:bg-dark-card dark:text-secondary-600">
               <div className="relative flex flex-wrap justify-between p-5 border-b dark:border-secondary-800">
-                <h4 className="mb-0 dark:text-white">Pending DBS Checks</h4>
+                <h4 className="text-lg font-semibold dark:text-white">
+                  Pending DBS Checks
+                </h4>
               </div>
               <div className="p-5">
                 <div className="flex items-center gap-4 mb-8">
@@ -1079,7 +1075,9 @@ function EmployerDashboard() {
           <div className="relative flex flex-col max-h-[420px] mb-8 lg:mb-0 bg-white rounded shadow-lg dark:bg-dark-card grid grid-cols-1">
             <div className="flex flex-col overflow-hidden bg-white rounded-lg dark:bg-dark-card dark:text-secondary-600">
               <div className="relative flex flex-wrap justify-between p-5 border-b dark:border-secondary-800">
-                <h4 className="mb-0 dark:text-white">Active Cases</h4>
+                <h4 className="text-lg font-semibold dark:text-white">
+                  Active Cases
+                </h4>
               </div>
               <div className="p-5">
                 <div className="flex items-center gap-4 mb-8">
@@ -1169,7 +1167,9 @@ function EmployerDashboard() {
           <div className="relative flex flex-col mb-8 lg:mb-0 bg-white rounded shadow-lg dark:bg-dark-card grid grid-cols-1">
             <div className="flex flex-col overflow-hidden bg-white rounded-lg dark:bg-dark-card dark:text-secondary-600">
               <div className="relative flex flex-wrap justify-between p-5 border-b dark:border-secondary-800">
-                <h4 className="mb-0 dark:text-white">Recent Reports</h4>
+                <h4 className="text-lg font-semibold dark:text-white">
+                  Recent Reports
+                </h4>
               </div>
               <div className="p-5">
                 <div className="flex items-center gap-4 mb-8">
@@ -1301,7 +1301,9 @@ function EmployerDashboard() {
           <div className="relative flex flex-col mb-8 bg-white rounded shadow-lg dark:bg-dark-card grid gird-cols-1 lg:col-span-3">
             <div className="flex flex-col overflow-hidden bg-white rounded-lg dark:bg-dark-card dark:text-secondary-600">
               <div className="relative flex flex-wrap justify-between p-5 ">
-                <h4 className="mb-2 sm:mb-0 dark:text-white">Payment Log</h4>
+                <h4 className="text-lg font-semibold dark:text-white">
+                  Payment Log
+                </h4>
                 <div className="flex"></div>
               </div>
               <hr className="m-0" />
