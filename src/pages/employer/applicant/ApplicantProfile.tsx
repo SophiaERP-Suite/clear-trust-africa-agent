@@ -45,7 +45,7 @@ function ApplicantsNew() {
                 </div>
                 <div>
                   <a
-                    href="Employee"
+                    href="Applicant"
                     className="text-white btn shadow-md btn-soft-light hover:shadow-xl hover:bg-glass focus:bg-gray-200"
                   >
                     <Users size={18} className="mr-2" />

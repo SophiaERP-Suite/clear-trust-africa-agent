@@ -21,7 +21,7 @@ import rashkin from "../../../assets2/img/isaiah_rashkin.jpg";
 import deborah from "../../../assets2/img/deborah_wilkins.jpg";
 import femi from "../../../assets2/img/femi_adebayo.jpg";
 
-function AdminEmployees() {
+function AdminApplicants() {
   return (
     <>
       <div
@@ -32,14 +32,14 @@ function AdminEmployees() {
           <div className="flex">
             <Users className="text-[rgb(112_22_208/0.9)] mr-2 " size={36} />
             <div>
-              <h3 className="mb-0 text-black">Employee Management</h3>
+              <h3 className="mb-0 text-black">Applicant Management</h3>
               <p className="text-secondary-600 text-black">
-                Dashboard <ChevronRightIcon size={14} /> Employee Management{" "}
+                Dashboard <ChevronRightIcon size={14} /> Applicant Management{" "}
               </p>
             </div>
           </div>
           <div>
-            <a href="EmployeeNew" className="btn btn-primary">
+            <a href="ApplicantNew" className="btn btn-primary">
               <Plus size={18} className="mr-2" />
               Add New
             </a>
@@ -51,7 +51,7 @@ function AdminEmployees() {
             <div className="relative flex flex-col mb-8  bg-white dark:bg-dark-card shadow rounded">
               <div className="flex justify-between flex-auto p-5 border-b dark:border-secondary-800 rounded">
                 <h4 className="mb-0 font-bold">
-                  Employees List
+                  Applicants List
                 </h4>
                 <a href="/ApplicantNew"></a>
               </div>
@@ -128,7 +128,7 @@ function AdminEmployees() {
                               style={{ objectFit: "cover" }}
                               alt="profile"
                             />
-                            <a href="EmployeeProfile">Kemi Olawale</a>
+                            <a href="ApplicantProfile">Kemi Olawale</a>
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap text-secondary-600 dark:text-secondary-500">
                             (760) 756 7568
@@ -198,7 +198,7 @@ function AdminEmployees() {
                               </a>
                               <a
                                 className="btn btn-warning btn-icon btn-sm mr-1"
-                                href="EmployeeNew"
+                                href="ApplicantNew"
                                 type="button"
                                 data-tp-toggle="tooltip"
                                 data-tp-placement="top"
@@ -802,4 +802,4 @@ function AdminEmployees() {
   );
 }
 
-export default AdminEmployees;
+export default AdminApplicants;

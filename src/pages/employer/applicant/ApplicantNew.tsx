@@ -20,18 +20,18 @@ import "../../../assets2/js/swiper-slider.js";
 function ApplicantNew() {
   return (
     <>
-     
-       <div
+      <div
         className="p-6 lg:p-8 footer-inner mx-auto main-container container"
         x-bind:className="setting.page_layout"
       >
-         <div className="flex flex-wrap mb-8 items-center justify-between">
+        <div className="flex flex-wrap mb-8 items-center justify-between">
           <div className="flex">
             <Users className="text-[rgb(112_22_208/0.9)] mr-2 " size={36} />
             <div>
               <h3 className="mb-0 text-black">Applicant Management</h3>
               <p className="text-secondary-600 text-black">
-                Dashboard <ChevronRightIcon size={14} /> Report & Analytics{" "}
+                Dashboard <ChevronRightIcon size={14} /> Applcant Management{" "}
+                <ChevronRightIcon size={14} /> New Applcant{" "}
               </p>
             </div>
           </div>
@@ -362,7 +362,7 @@ function ApplicantNew() {
                     </div>
                   </div>
                   <hr className="mt-5" />
-                  <h5 className="mb-4 dark:text-white">Security</h5>
+                  {/* <h5 className="mb-4 dark:text-white">Security</h5>
                   <div className="grid lg:grid-cols-2 gap-x-8">
                     <div className="w-full mb-3 col-span-2">
                       <label
@@ -406,7 +406,7 @@ function ApplicantNew() {
                         placeholder="Repeat Password "
                       />
                     </div>
-                  </div>
+                  </div> */}
                   <div className="mb-3">
                     <label className="inline-block mb-2 text-secondary-600 dark:text-white">
                       <input

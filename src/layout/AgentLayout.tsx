@@ -50,7 +50,7 @@ function AgentLayout() {
     },
 
      {
-      path: "/Applicant",
+      path: "/Applicants",
       icon: <Users size={25} />,
       label: "Applicant Mgt",
     },
