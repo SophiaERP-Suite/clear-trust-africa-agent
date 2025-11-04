@@ -49,7 +49,7 @@ export default function CommunicationsPage() {
     },
   ];
 
-  const staffConversations = [
+  const applicantConversations = [
     { 
       id: 1, 
       name: 'Evidence Processing Team', 
@@ -136,7 +136,7 @@ export default function CommunicationsPage() {
   ];
 
   const conversations = selectedRoute === 'institution' ? institutionConversations : 
-                       selectedRoute === 'staff' ? staffConversations : 
+                       selectedRoute === 'applicant' ? applicantConversations : 
                        adminConversations;
 
   const institutionNotifications = [
@@ -146,7 +146,7 @@ export default function CommunicationsPage() {
     { id: 4, type: 'system', title: 'Safety Check-In Required', message: 'Please confirm your status by 1800 hours', time: '2h ago', read: true },
   ];
 
-  const staffNotifications = [
+  const applicantNotifications = [
     { id: 1, type: 'alert', title: 'Evidence Request', message: 'Urgent evidence processing needed for Case #1847', time: '10m ago', read: false },
     { id: 2, type: 'message', title: 'Document Ready', message: 'Requested case files have been prepared', time: '30m ago', read: false },
     { id: 3, type: 'evidence', title: 'Lab Results Complete', message: 'Forensic analysis completed for 3 cases', time: '2h ago', read: true },
@@ -161,7 +161,7 @@ export default function CommunicationsPage() {
   ];
 
   const notifications = selectedRoute === 'institution' ? institutionNotifications : 
-                       selectedRoute === 'staff' ? staffNotifications : 
+                       selectedRoute === 'applicant' ? applicantNotifications : 
                        adminNotifications;
 
   const institutionAnnouncements = [
@@ -170,7 +170,7 @@ export default function CommunicationsPage() {
     { id: 3, title: 'Equipment Maintenance Schedule', content: 'Surveillance equipment check required this week', priority: 'medium', date: 'Oct 25, 2025' },
   ];
 
-  const staffAnnouncements = [
+  const applicantAnnouncements = [
     { id: 1, title: 'Evidence Processing Training', content: 'Mandatory training session on new evidence protocols - Wednesday 2PM', priority: 'high', date: 'Oct 28, 2025' },
     { id: 2, title: 'Lab Access Schedule Change', content: 'Forensics lab hours extended to accommodate case load', priority: 'medium', date: 'Oct 26, 2025' },
     { id: 3, title: 'Document Management Update', content: 'New digital filing system implementation next week', priority: 'low', date: 'Oct 23, 2025' },
@@ -183,7 +183,7 @@ export default function CommunicationsPage() {
   ];
 
   const announcements = selectedRoute === 'institution' ? institutionAnnouncements : 
-                       selectedRoute === 'staff' ? staffAnnouncements : 
+                       selectedRoute === 'applicant' ? applicantAnnouncements : 
                        adminAnnouncements;
 
   const messages = [
@@ -238,8 +238,8 @@ export default function CommunicationsPage() {
             </div>
             <div className="flex gap-2">
               {[
-                { id: 'institution', label: 'Institution', icon: Shield },
-                { id: 'staff', label: 'Staff', icon: Users },
+                // { id: 'institution', label: 'Institution', icon: Shield },
+                { id: 'applicant', label: 'Applicant', icon: Users },
                 { id: 'admin', label: 'Admin', icon: Settings }
               ].map((route) => {
                 const Icon = route.icon;
@@ -345,7 +345,7 @@ export default function CommunicationsPage() {
                     <div className="flex items-center gap-3">
                       <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-semibold ${
                         selectedRoute === 'institution' ? 'bg-blue-500' :
-                        selectedRoute === 'staff' ? 'bg-purple-500' : 'bg-green-500'
+                        selectedRoute === 'applicant' ? 'bg-purple-500' : 'bg-green-500'
                       }`}>
                         {conversations[0]?.avatar}
                       </div>
@@ -375,15 +375,15 @@ export default function CommunicationsPage() {
                     <div className="flex items-center justify-center">
                       <div className={`flex items-center gap-2 px-3 py-1 rounded-full ${
                         selectedRoute === 'institution' ? 'bg-blue-100' :
-                        selectedRoute === 'staff' ? 'bg-purple-100' : 'bg-green-100'
+                        selectedRoute === 'applicant' ? 'bg-purple-100' : 'bg-green-100'
                       }`}>
                         <Shield className={`w-3 h-3 ${
                           selectedRoute === 'institution' ? 'text-blue-700' :
-                          selectedRoute === 'staff' ? 'text-purple-700' : 'text-green-700'
+                          selectedRoute === 'applicant' ? 'text-purple-700' : 'text-green-700'
                         }`} />
                         <span className={`text-xs font-medium ${
                           selectedRoute === 'institution' ? 'text-blue-700' :
-                          selectedRoute === 'staff' ? 'text-purple-700' : 'text-green-700'
+                          selectedRoute === 'applicant' ? 'text-purple-700' : 'text-green-700'
                         }`}>
                           Secure {selectedRoute.charAt(0).toUpperCase() + selectedRoute.slice(1)} Communication
                         </span>
@@ -398,7 +398,7 @@ export default function CommunicationsPage() {
                           <div className={`p-3 rounded-md ${
                             msg.isMine 
                               ? selectedRoute === 'institution' ? 'bg-blue-600 text-white' :
-                                selectedRoute === 'staff' ? 'bg-purple-600 text-white' : 'bg-green-600 text-white'
+                                selectedRoute === 'applicant' ? 'bg-purple-600 text-white' : 'bg-green-600 text-white'
                               : 'bg-slate-100 text-slate-900'
                           }`}>
                             <p className="text-sm">{msg.content}</p>
@@ -408,7 +408,7 @@ export default function CommunicationsPage() {
                             {msg.isMine && (
                               <CheckCheck className={`w-3 h-3 ${
                                 selectedRoute === 'institution' ? 'text-blue-600' :
-                                selectedRoute === 'staff' ? 'text-purple-600' : 'text-green-600'
+                                selectedRoute === 'applicant' ? 'text-purple-600' : 'text-green-600'
                               }`} />
                             )}
                           </div>
@@ -432,7 +432,7 @@ export default function CommunicationsPage() {
                       </div>
                       <button className={`p-3 rounded-md hover:opacity-90 transition-colors ${
                         selectedRoute === 'institution' ? 'bg-blue-600' :
-                        selectedRoute === 'staff' ? 'bg-purple-600' : 'bg-green-600'
+                        selectedRoute === 'applicant' ? 'bg-purple-600' : 'bg-green-600'
                       } text-white`}>
                         <Send className="w-5 h-5" />
                       </button>

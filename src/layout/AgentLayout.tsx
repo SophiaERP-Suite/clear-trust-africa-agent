@@ -11,6 +11,8 @@ import {
   // File,
   User,
   ShieldCheck,
+  // Inbox,
+  Mail,
 } from "lucide-react";
 
 function AgentLayout() {
@@ -37,6 +39,13 @@ function AgentLayout() {
     //   icon: <File size={25} />,
     //   label: "Payment Log",
     // },
+
+      {
+      path: "/Requests",
+      icon: <Mail size={25} />,
+      label: "Requests",
+    },
+
     {
       path: "/Reports",
       icon: <BarChart3 size={25} />,

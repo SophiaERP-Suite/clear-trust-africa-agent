@@ -1,6 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "../pages/employer/Dashboard";
-import EmployerLayout from "../layout/AgentLayout";
 import ApplicantNew from "../pages/employer/applicant/ApplicantNew";
 import Applicants from "../pages/employer/applicant/Applicants";
 import ApplicantProfile from "../pages/employer/applicant/ApplicantProfile";
@@ -11,14 +10,17 @@ import CommunicationsPage from "../pages/employer/communication/Communication";
 import PaymentDashboard from "../pages/employer/Payment";
 import ControlPanel from "../pages/employer/controlpanel/ControlPanel";
 import Pricing from "../pages/employer/pricing/Pricing";
-import Profile from "../pages/employer/employer/EmployerProfile";
-import ProfileUpdate from "../pages/employer/employer/EmployerUpdate";
+import Profile from "../pages/employer/agent/Profile";
+import ProfileUpdate from "../pages/employer/agent/ProfileUpdate";
 import Security from "../pages/employer/Security";
+import AgentLayout from "../layout/AgentLayout";
+import RequestsList from "../pages/employer/requests/Requests";
+import HelpSupportPage from "../pages/employer/Help";
 
 function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<EmployerLayout />}>
+      <Route path="/" element={<AgentLayout />}>
         <Route index element={<Dashboard />} />
         <Route path="Dashboard" element={<Dashboard />} />
         <Route path="Applicants" element={<Applicants />} />
@@ -34,6 +36,8 @@ function AppRoutes() {
         <Route path="ControlPanel" element={<ControlPanel />} />
         <Route path="Pricing" element={<Pricing />} />
         <Route path="Security" element={<Security />} />
+        <Route path="Requests" element={<RequestsList />} />
+        <Route path="Help" element={<HelpSupportPage />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

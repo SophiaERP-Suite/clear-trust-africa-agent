@@ -10734,11 +10734,11 @@ svg {
 .dark .apexcharts-legend-text {
   color: #e9ecef !important;
 }
-.dark .apexcharts-tooltip .apexcharts-tooltip-title.active::after {
+/* .dark .apexcharts-tooltip .apexcharts-tooltip-title.active::after {
   border-color: grey !important;
   background-color: #161d2b !important;
   color: white !important;
-}
+} */
 .dark .uppy-Dashboard-inner {
   background-color: #0e121b;
 }
