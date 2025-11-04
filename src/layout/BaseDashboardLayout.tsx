@@ -966,14 +966,14 @@ function BaseDashboardLayout({ navItems, title }: BaseDashboardLayoutProps) {
                                   <div className="absolute right-0 z-10 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg">
                                     <div className="py-1 px-2">
                                       <p className="w-full px-4 py-2 text-left text-md border-b font-bold text-gray-700 hover:bg-gray-100">
-                                        Teachers Registration Council of Nigeria
+                                        Calistus Ineh Inc.
                                       </p>
                                       <ul className="py-2">
                                         <li className="w-full px-4 py-2 text-left rounded-md text-sm text-gray-700 hover:bg-gray-100">
-                                          <a>Organization Profile</a>
+                                          <a href="profile">Profile</a>
                                         </li>
                                         <li className="w-full px-4 py-2 text-left rounded-md text-sm text-gray-700 hover:bg-gray-100">
-                                          <a>Settings</a>
+                                          <a href="security">Settings</a>
                                         </li>
                                         <li className="w-full px-4 py-2 text-left rounded-md text-sm text-gray-700 hover:bg-gray-100">
                                           <button>Logout</button>
