@@ -208,18 +208,17 @@ export default function HelpSupportPage() {
   );
 
   return (
-    
     <div
       className="p-6 lg:p-8 footer-inner mx-auto main-container container"
       x-bind:className="setting.page_layout"
     >
       <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search for help articles, FAQs, guides..."
-                className="hidden w-full pl-12 pr-4 py-4 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm"
-              />
+        type="text"
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        placeholder="Search for help articles, FAQs, guides..."
+        className="hidden w-full pl-12 pr-4 py-4 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm"
+      />
       {/* Header */}
       <div className="flex flex-wrap justify-between gap-4">
         <div className="col-md-12">
@@ -262,7 +261,10 @@ export default function HelpSupportPage() {
               >
                 <div className="flex items-start justify-between mb-3">
                   <div className="p-2 bg-gray-100 rounded-full group-hover:bg-[rgba(112,22,208,0.9)] transition-colors">
-                    <Icon size={25} className=" text-[rgb(112_22_208/0.9)] group-hover:text-gray-800  transition-colors" />
+                    <Icon
+                      size={25}
+                      className=" text-[rgb(112_22_208/0.9)] group-hover:text-gray-800  transition-colors"
+                    />
                   </div>
                   <ExternalLink className="w-4 h-4 text-slate-400" />
                 </div>

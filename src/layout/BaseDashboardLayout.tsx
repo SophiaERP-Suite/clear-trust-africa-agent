@@ -955,10 +955,10 @@ function BaseDashboardLayout({ navItems, title }: BaseDashboardLayoutProps) {
                                       className="mb-0 caption-title mr-4"
                                       style={{}}
                                     >
-                                      Calistus Ineh
+                                      Calistus Ineh Inc.
                                     </h6>
                                     <p className="mb-0 caption-sub-title focusa active:text-primary-500 font-bold focus:text-primary-500 hover:text-primary-500 text-black mr-4">
-                                      Agent
+                                      Company
                                     </p>
                                   </div>
                                 </a>

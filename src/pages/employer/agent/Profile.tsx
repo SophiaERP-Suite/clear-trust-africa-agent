@@ -9,11 +9,11 @@ import {
   ChevronRightIcon,
   User,
 } from "lucide-react";
-import princeton from "../../../assets2/img/princeton.png";
+import femi from "../../../assets2/img/femi_adebayo.jpg";
 
 export default function Profile() {
   const employer = {
-    name: "PrimeGate Facilities Ltd.",
+    name: "Calistus Ineh",
     email: "contact@primegate.com",
     phone: "+234 802 123 4567",
     address: "12A Admiralty Way, Lekki Phase 1, Lagos",
@@ -50,10 +50,10 @@ export default function Profile() {
       </div>
       <div className="space-y-8">
         {/* HEADER */}
-        <div className=" bg-gradient-to-br from-blue-400/30 to-yellow-100/20 rounded-md border shadow p-6 flex flex-col md:flex-row items-center md:items-start gap-6">
+        <div className=" bg-linear-to-br from-blue-400/30 to-yellow-100/20 rounded-md border shadow p-6 flex flex-col md:flex-row items-center md:items-start gap-6">
           <div className="w-48 h-48  flex items-center justify-center">
             {/* <Building2 size={50} className="text-blue-600" /> */}
-            <img src={princeton} alt="logo" />
+            <img src={femi} className="rounded-full" alt="logo" />
           </div>
 
           <div className="flex-1 text-center md:text-left">
@@ -66,7 +66,7 @@ export default function Profile() {
               <div className="flex justify-center md:justify-start items-center gap-2">
                 <ShieldCheck size={18} className="text-green-600" />
                 <span className="text-green-700 font-medium">
-                  Verified Company
+                  Verified Agent
                 </span>
               </div>
             ) : (
@@ -75,13 +75,16 @@ export default function Profile() {
               </p>
             )}
 
-            <a href="profileUpdate" className="mt-4 bg-[rgb(112_22_208/0.9)] text-white text-center px-5 py-2 rounded-md flex justify-center items-center gap-2 hover:bg-blue-700 transition mx-auto md:mx-0">
+            <a
+              href="profileUpdate"
+              className="mt-4 bg-[rgb(112_22_208/0.9)] text-white text-center px-5 py-2 rounded-md flex justify-center items-center gap-2 hover:bg-blue-700 transition mx-auto md:mx-0"
+            >
               <Edit3 size={16} /> Edit Profile
             </a>
           </div>
         </div>
 
-        {/* COMPANY DETAILS */}
+        {/* Agent DETAILS */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           <div className="bg-white rounded-lg shadow p-5 flex items-start gap-3">
             <Mail className="text-blue-600 mt-1" />
@@ -120,14 +123,12 @@ export default function Profile() {
         <div className="bg-white rounded-md border shadow p-6">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-lg font-bold text-gray-800 flex items-center gap-2">
-              <FileText size={20} className="text-blue-600" /> Company Documents
+              <FileText size={20} className="text-blue-600" /> Agent Documents
             </h3>
             <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 text-sm transition">
               + Upload Document
             </button>
           </div>
-
-          
 
           <table className="min-w-full overflow-hidden divide-y divide-secondary-200 dark:divide-secondary-800 border dark:border-secondary-800">
             <thead>
@@ -175,7 +176,9 @@ export default function Profile() {
                     Verified
                   </span>
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap text-secondary-600 dark:text-secondary-500">Sept 20, 2025</td>
+                <td className="px-6 py-4 whitespace-nowrap text-secondary-600 dark:text-secondary-500">
+                  Sept 20, 2025
+                </td>
                 <td className="px-6 py-4">
                   <button className="text-blue-600 hover:underline text-sm">
                     View
@@ -192,7 +195,9 @@ export default function Profile() {
                     Pending
                   </span>
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap text-secondary-600 dark:text-secondary-500">Oct 15, 2025</td>
+                <td className="px-6 py-4 whitespace-nowrap text-secondary-600 dark:text-secondary-500">
+                  Oct 15, 2025
+                </td>
                 <td className="px-6 py-4">
                   <button className="text-blue-600 hover:underline text-sm">
                     View
