@@ -12,7 +12,7 @@ import {
   User,
   ShieldCheck,
   // Inbox,
-  Mail,
+  // Mail,
 } from "lucide-react";
 
 function AgentLayout() {
@@ -40,11 +40,11 @@ function AgentLayout() {
     //   label: "Payment Log",
     // },
 
-      {
-      path: "/Requests",
-      icon: <Mail size={25} />,
-      label: "Requests",
-    },
+    //   {
+    //   path: "/Requests",
+    //   icon: <Mail size={25} />,
+    //   label: "Requests",
+    // },
 
     {
       path: "/Reports",
